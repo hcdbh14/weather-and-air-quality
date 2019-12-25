@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country Table View-->
+        <scene sceneID="Ilx-AU-GC4">
+            <objects>
+                <tableViewController storyboardIdentifier="ThirdViewController" id="Dcj-Qr-ChO" userLabel="Country Table View" customClass="locationSelection" customModule="Clean_AirWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u8y-h5-VB6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="tableColor"/>
+                        <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZWn-zP-Hx1">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="JC9-CO-1cX" customClass="CountryCell" customModule="Clean_AirWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JC9-CO-1cX" id="hCC-tZ-xtR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-Qe-rlr">
+                                            <rect key="frame" x="20" y="11" width="107.5" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="countryLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="tableColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PeH-Qe-rlr" secondAttribute="trailing" constant="20" symbolic="YES" id="5A1-JA-owU"/>
+                                        <constraint firstItem="PeH-Qe-rlr" firstAttribute="top" secondItem="hCC-tZ-xtR" secondAttribute="topMargin" id="C8D-WI-BRc"/>
+                                        <constraint firstItem="PeH-Qe-rlr" firstAttribute="leading" secondItem="hCC-tZ-xtR" secondAttribute="leadingMargin" id="QdN-mT-NuW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="tableColor"/>
+                                <connections>
+                                    <outlet property="countryLabel" destination="PeH-Qe-rlr" id="KEK-CQ-Fkb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" tag="2000" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StateCell" id="ZvF-lJ-hwK" customClass="StateCell" customModule="Clean_AirWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="115.5" width="414" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZvF-lJ-hwK" id="ZOx-do-Fzj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iI-Ie-L2G">
+                                            <rect key="frame" x="24" y="12" width="81" height="21.5"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="stateLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="tableColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9iI-Ie-L2G" secondAttribute="trailing" constant="20" symbolic="YES" id="0fL-lR-WUs"/>
+                                        <constraint firstItem="9iI-Ie-L2G" firstAttribute="top" secondItem="ZOx-do-Fzj" secondAttribute="topMargin" constant="1" id="K4K-RZ-zwG"/>
+                                        <constraint firstItem="9iI-Ie-L2G" firstAttribute="leading" secondItem="ZOx-do-Fzj" secondAttribute="leadingMargin" constant="4" id="gux-Yp-AaR"/>
+                                        <constraint firstItem="9iI-Ie-L2G" firstAttribute="centerY" secondItem="ZOx-do-Fzj" secondAttribute="centerY" id="sNR-Df-F58"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="tableColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="StateCell"/>
+                                <connections>
+                                    <outlet property="stateLabel" destination="9iI-Ie-L2G" id="L3F-Ml-QwQ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityCell" id="dAw-F6-TPS" userLabel="CityCell" customClass="CityCell" customModule="Clean_AirWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="161" width="414" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dAw-F6-TPS" id="bug-ML-Rq4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtm-dM-GiJ">
+                                            <rect key="frame" x="24" y="12" width="76.5" height="21.5"/>
+                                            <accessibility key="accessibilityConfiguration" label="cityLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="tableColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Dtm-dM-GiJ" firstAttribute="top" secondItem="bug-ML-Rq4" secondAttribute="topMargin" constant="1" id="MsT-0Q-qB2"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dtm-dM-GiJ" secondAttribute="trailing" constant="20" symbolic="YES" id="OmQ-sg-ODw"/>
+                                        <constraint firstItem="Dtm-dM-GiJ" firstAttribute="centerY" secondItem="bug-ML-Rq4" secondAttribute="centerY" id="dEE-bp-Cwx"/>
+                                        <constraint firstItem="Dtm-dM-GiJ" firstAttribute="leading" secondItem="bug-ML-Rq4" secondAttribute="leadingMargin" constant="4" id="pyo-S3-kDO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="tableColor"/>
+                                <connections>
+                                    <outlet property="cityLabel" destination="Dtm-dM-GiJ" id="xBn-0A-23c"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dcj-Qr-ChO" id="8gj-If-8In"/>
+                            <outlet property="delegate" destination="Dcj-Qr-ChO" id="Zaz-58-0p7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fkc-7r-ifL"/>
+                    <connections>
+                        <outlet property="countriesTableView" destination="u8y-h5-VB6" id="5ad-HU-flS"/>
+                        <outlet property="helpTitle" destination="ZWn-zP-Hx1" id="LwL-8V-R4O"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKR-6l-zp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1542" y="-1213"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="16e-3g-cq7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecondViewController" storyboardName="Main" referencedIdentifier="SecondViewController" id="kfb-0f-Uvx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3qn-An-ICb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6A7-p4-UKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3384" y="-793"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="tableColor">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
